@@ -1,0 +1,102 @@
+//تعریف متغیر هاااا
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin sizeall($w,$h,$x,$y,$px,$py) {
+  width: $w;
+  height: $h;
+  margin: $y $x;
+  padding: $py $px;
+}
+
+@mixin displayall($distype,$disjusty,$disdire,$diswarp) {
+  display: $distype;
+  justify-content: $disjusty;
+  flex-direction: $disdire;
+  flex-wrap: $diswarp;
+
+}
+
+@mixin fontall($fontsize,$fontw,$directtext) {
+  font-size: $fontsize;
+  font-weight: $fontw;
+  direction: $directtext;
+}
+
+// بدنه سی اس اس
+
+.mySlides {
+  position: absolute;
+  @include sizeall(100%, 90vh, 0, 0, 0, 0)
+}
+
+#divbanner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  box-sizing: border-box;
+  @include sizeall(100%, 10vh, 0, 3vh, 2vw, 0);
+  @include displayall(flex, space-between, row, wrap)
+}
+
+#sectionright {
+  text-align: center;
+  @include sizeall(60%, 100%, 0, 0, 0, 0);
+}
+
+#ullist {
+  @include displayall(flex, space-evenly, row, wrap);
+  list-style-type: none;
+}
+
+.lilist:hover {
+  color: black;
+  text-shadow: 0 3px whitesmoke;
+  cursor: pointer;
+}
+
+.lilist {
+  color: floralwhite;
+  @include fontall(1.5vw, 600, ltr);
+  margin: 0.5vw 0.3vh;
+}
+
+#H1title {
+  position: absolute;
+  z-index: 3;
+  @include fontall(4.3vw, 700, ltr);
+  text-align: center;
+  left: 27vw;
+  top: 25%;
+  color: white;
+}
+
+#abot:hover {
+  background-color: #b0743f;
+  color: white;
+}
+
+#abot {
+  cursor: pointer;
+  position: absolute;
+  z-index: 3;
+  @include fontall(1.2vw, 500, ltr);
+  top: 61vh;
+  color: black;
+  left: 45%;
+  background-color: white;
+  border-radius: 22px;
+  @include sizeall(7.1vw, 3.5vh, 0, 0, 1.4vw, 2vh);
+}
+
+#divnav {
+  @include sizeall(100%, 35vh, 0, 0, 0, 0);
+  background-color: #b0743f;
+  position: absolute;
+  top: 90vh;
+}

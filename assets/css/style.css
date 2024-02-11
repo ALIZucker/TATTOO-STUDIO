@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.mySlides {
+  position: absolute;
+  width: 100%;
+  height: 90vh;
+  margin: 0 0;
+  padding: 0 0; }
+
+#divbanner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  box-sizing: border-box;
+  width: 100%;
+  height: 10vh;
+  margin: 3vh 0;
+  padding: 0 2vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+#sectionright {
+  text-align: center;
+  width: 60%;
+  height: 100%;
+  margin: 0 0;
+  padding: 0 0; }
+
+#ullist {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none; }
+
+.lilist:hover {
+  color: black;
+  text-shadow: 0 3px whitesmoke;
+  cursor: pointer; }
+
+.lilist {
+  color: floralwhite;
+  font-size: 1.5vw;
+  font-weight: 600;
+  direction: ltr;
+  margin: 0.5vw 0.3vh; }
+
+#H1title {
+  position: absolute;
+  z-index: 3;
+  font-size: 4.3vw;
+  font-weight: 700;
+  direction: ltr;
+  text-align: center;
+  left: 27vw;
+  top: 25%;
+  color: white; }
+
+#abot:hover {
+  background-color: #b0743f;
+  color: white; }
+
+#abot {
+  cursor: pointer;
+  position: absolute;
+  z-index: 3;
+  font-size: 1.2vw;
+  font-weight: 500;
+  direction: ltr;
+  top: 61vh;
+  color: black;
+  left: 45%;
+  background-color: white;
+  border-radius: 22px;
+  width: 7.1vw;
+  height: 3.5vh;
+  margin: 0 0;
+  padding: 2vh 1.4vw; }
+
+#divnav {
+  width: 100%;
+  height: 35vh;
+  margin: 0 0;
+  padding: 0 0;
+  background-color: #b0743f;
+  position: absolute;
+  top: 90vh; }
+
+/*# sourceMappingURL=style.css.map */
