@@ -1,5 +1,5 @@
 //تعریف متغیر هاااا
-
+$brownColor: #b0743f;
 
 body {
   margin: 0;
@@ -99,4 +99,64 @@ body {
   background-color: #b0743f;
   position: absolute;
   top: 90vh;
+  @include displayall(flex, space-evenly, row, wrap);
+
+}
+
+.articlenav:hover {
+  transform: scale(1.1, 1.1);
+  cursor: pointer;
+
+}
+
+.articlenav {
+  @include sizeall(23vw, 32vh, 0.2vw, 1.5vh, 0, 0);
+  border-right: 1px white solid;
+  @include displayall(flex, center, column, wrap);
+  align-items: center;
+}
+
+.h2nav {
+  color: white;
+}
+
+.imgnav {
+  @include sizeall(7vw, 10vh, 0.2vw, 1.5vh, 0, 0);
+  margin-top: 5vh;
+
+}
+
+.articlepost:hover {
+  background-color:#b0743f ;
+  color: #efeded;
+}
+
+.articlepost {
+  background-color: #efeded;
+  @include sizeall(30vw, 63vh, 0, 0, 0, 0);
+  @include displayall(flex, center, column, wrap);
+  align-items: center;
+  border-radius: 8px;
+}
+
+#divpost {
+  @include sizeall(100%, 130vh, 0, 0, 0, 0);
+  position: absolute;
+  top: 125vh;
+  @include displayall(flex, space-evenly, row, wrap);
+  align-items: center;
+
+}
+
+.imgpost {
+  @include sizeall(25vw, 40vh, 0, 0, 0, 0);
+
+}
+
+.h3post {
+  @include fontall(1.5vw, 600, ltr)
+}
+
+.ppost {
+  @include fontall(1.2vw, 400, ltr)
 }

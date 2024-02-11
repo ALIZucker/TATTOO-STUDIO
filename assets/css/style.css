@@ -89,6 +89,82 @@ body {
   padding: 0 0;
   background-color: #b0743f;
   position: absolute;
-  top: 90vh; }
+  top: 90vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.articlenav:hover {
+  transform: scale(1.1, 1.1);
+  cursor: pointer; }
+
+.articlenav {
+  width: 23vw;
+  height: 32vh;
+  margin: 1.5vh 0.2vw;
+  padding: 0 0;
+  border-right: 1px white solid;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.h2nav {
+  color: white; }
+
+.imgnav {
+  width: 7vw;
+  height: 10vh;
+  margin: 1.5vh 0.2vw;
+  padding: 0 0;
+  margin-top: 5vh; }
+
+.articlepost:hover {
+  background-color: #b0743f;
+  color: #efeded; }
+
+.articlepost {
+  background-color: #efeded;
+  width: 30vw;
+  height: 63vh;
+  margin: 0 0;
+  padding: 0 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 8px; }
+
+#divpost {
+  width: 100%;
+  height: 130vh;
+  margin: 0 0;
+  padding: 0 0;
+  position: absolute;
+  top: 125vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.imgpost {
+  width: 25vw;
+  height: 40vh;
+  margin: 0 0;
+  padding: 0 0; }
+
+.h3post {
+  font-size: 1.5vw;
+  font-weight: 600;
+  direction: ltr; }
+
+.ppost {
+  font-size: 1.2vw;
+  font-weight: 400;
+  direction: ltr; }
 
 /*# sourceMappingURL=style.css.map */
