@@ -164,18 +164,40 @@ body {
   @include sizeall(100%, 93vh, 0, 0, 0, 0);
   @include pos(absolute, 260vh);
 }
-#aboutimg{
+
+#aboutimg {
   @include sizeall(50%, 93vh, 0, 0, 0, 0);
 }
-#abosectionleft{
+
+#abosectionleft {
   @include sizeall(100%, 93vh, 0, 0, 0, 0);
   background-color: #efeded;
 }
-#abosectionright{
+
+#abosectionright {
   @include sizeall(45vw, 67vh, 0, 0, 0, 0);
   background-color: #fff;
   @include pos(absolute, 12vh);
+  @include displayall(flex, start, column, wrap);
   left: 44%;
+  padding: 2vw 10vh;
   border-radius: 24px;
+  box-sizing: border-box;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
+#aboutp {
+  @include fontall(1.3vw, 500, ltr);
+}
+
+#abouth2 {
+  @include fontall(2vw, 600, ltr);
+}
+#aboutbot{
+  @include sizeall(9vw, 2vh, 0, 0, 2vw, 3vh);
+  @include fontall(1vw, 600, ltr);
+  background-color: #2f2f2f;
+  border-radius: 24px;
+  color: #efeded;
+}

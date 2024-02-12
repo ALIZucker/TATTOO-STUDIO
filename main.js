@@ -107,12 +107,19 @@ demo.append(divpost);
 
 /*درباره سایت تتو*/
 
-aboutimg.src="assets/img/fashion_image.jpg";
-
-abosectionright.append()
+aboutimg.src = "assets/img/fashion_image.jpg";
+abouth2.innerHTML = "WE ARE THE COOLEST <br/> TATTOO STUDIO"
+aboutp.innerHTML = "Sed eu justo sit amet metus laoreet accumsanis asce ayli quam, cc umsausce ayli quam, tellus id inumsau sce asad uam, tellus wcid in aptent taciti sociosqu ad litora torquent per conubia nostra.\n" +
+    "\n" +
+    " \n" +
+    "\n" +
+    "Sed eu justo sit amet metus laoreet accumsanis asce ayli quam, cc umsausce ayli quam, tellus id inumsau sce asad uam, tellus wcid in aptent taciti sociosqu ad litora torquent per conubia nostra."
+aboutbot.innerHTML = "DISCOVER MORE"
+abosectionright.append(abouth2, aboutp, aboutbot)
 abosectionleft.append(aboutimg)
-aboutdiv.append(abosectionleft,abosectionright)
+aboutdiv.append(abosectionleft, abosectionright)
 demo.append(aboutdiv)
+
 ///////////////////////////////////////////////function
 
 function createimg(str) {
