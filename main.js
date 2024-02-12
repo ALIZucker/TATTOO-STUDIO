@@ -37,6 +37,9 @@ const exprspan3 = document.createElement("span");
 const exprp1 = document.createElement("p");
 const exprp2 = document.createElement("p");
 const exprp3 = document.createElement("p");
+const footerdiv = document.createElement("div");
+const legofooter = document.createElement("img");
+const pfooter = document.createElement("p");
 ///////////////////////////////////////////setAttribute
 
 divbanner.setAttribute("id", "divbanner");
@@ -58,10 +61,8 @@ aboutimg.setAttribute("id", "aboutimg");
 abouth2.setAttribute("id", "abouth2");
 aboutp.setAttribute("id", "aboutp");
 aboutbot.setAttribute("id", "aboutbot");
-
 ostaddiv.setAttribute("id", "ostaddiv");
 ostadtitle.setAttribute("id", "ostadtitle");
-
 exprdiv.setAttribute("id", "exprdiv");
 exprleft.setAttribute("id", "exprleft");
 exprimg.setAttribute("id", "exprimg");
@@ -78,6 +79,9 @@ exprp2.setAttribute("id", "exprp2");
 exprbdiv3.setAttribute("id", "exprbdiv3");
 exprspan3.setAttribute("id", "exprspan3");
 exprp3.setAttribute("id", "exprp3");
+footerdiv.setAttribute("id", "footerdiv");
+legofooter.setAttribute("id", "legofooter");
+pfooter.setAttribute("id", "pfooter");
 
 ///////////////////////////////////////////start Code
 /*-------------- --------------بنر سایت------------------------------------------------ */
@@ -209,7 +213,10 @@ let con = 0;
 
 setInterval(() => count(), 1)
 /*------------------------------------------------------footer------------------------------------------------*/
-
+legofooter.src="assets/img/logo.png"
+pfooter.innerHTML="Copyright © Tattoo Studio 2023. All Right Reserved"
+footerdiv.append(legofooter,pfooter)
+demo.append(footerdiv)
 ///////////////////////////////////////////////////////////function
 
 function count() {
