@@ -19,6 +19,7 @@ const aboutimg = document.createElement("img");
 const abouth2 = document.createElement("h2");
 const aboutp = document.createElement("p");
 const aboutbot = document.createElement("a");
+const ostaddiv = document.createElement("div");
 ///////////////////////////////////////////setAttribute
 
 divbanner.setAttribute("id", "divbanner");
@@ -40,6 +41,7 @@ aboutimg.setAttribute("id", "aboutimg");
 abouth2.setAttribute("id", "abouth2");
 aboutp.setAttribute("id", "aboutp");
 aboutbot.setAttribute("id", "aboutbot");
+ostaddiv.setAttribute("id", "ostaddiv");
 ///////////////////////////////////////////start Code
 /* بنر سایت */
 const img1 = createimg("assets/img/slider-default1.jpg")
@@ -119,6 +121,29 @@ abosectionright.append(abouth2, aboutp, aboutbot)
 abosectionleft.append(aboutimg)
 aboutdiv.append(abosectionleft, abosectionright)
 demo.append(aboutdiv)
+/*اسم تتو کار ها*/
+const ostad = [{
+    src: "assets/img/team_member1.jpg",
+    title: "NATHAN WALKER",
+    desc: "Tattoo Artist"
+}, {
+    src: "assets/img/team_member2.jpg",
+    title: "JACK LANE",
+    desc: "Tattoo Designer"
+}, {
+    src: "assets/img/team_member3.jpg",
+    title: "SHIRLEY JOHNSON",
+    desc: "Piercing Designer"
+}, {
+    src: "assets/img/team_member4.jpg",
+    title: "NATHAN WALKER",
+    desc: "Henna Designer"
+}
+]
+for (let x of ostad) {
+    ostaddiv.append(createostad(x.src, x.title, x.desc))
+}
+demo.append(ostaddiv)
 
 ///////////////////////////////////////////////function
 
@@ -173,4 +198,21 @@ function createpost(strimg, strtitle, strp) {
     ppost.innerHTML = strp;
     articlepost.append(imgpost, h3post, ppost);
     return articlepost;
+}
+
+function createostad(strimg, strtitle, strp) {
+    const articleostad = document.createElement("article");
+    const imgostad = document.createElement("img");
+    const h3ostad = document.createElement("h3");
+    const postad = document.createElement("p");
+
+    articleostad.setAttribute("class", "articleostad");
+    imgostad.setAttribute("class", "imgostad");
+    h3ostad.setAttribute("class", "h3ostad");
+    postad.setAttribute("class", "postad");
+    imgostad.src = strimg;
+    h3ostad.innerHTML = strtitle;
+    postad.innerHTML = strp;
+    articleostad.append(imgostad, h3ostad, postad);
+    return articleostad;
 }
