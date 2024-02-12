@@ -211,7 +211,7 @@ exprdiv.append(exprleft, exprright)
 demo.append(exprdiv)
 let con = 0;
 
-setInterval(() => count(), 1)
+let setinter=setInterval(() => count(), 1)
 /*------------------------------------------------------footer------------------------------------------------*/
 legofooter.src="assets/img/logo.png"
 pfooter.innerHTML="Copyright © Tattoo Studio 2023. All Right Reserved"
@@ -229,6 +229,10 @@ function count() {
     }
     if (con < 26) {
         exprspan3.innerHTML = con;
+    }
+    if(con === 1598){
+
+        clearInterval(setinter)
     }
 
 }
