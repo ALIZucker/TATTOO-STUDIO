@@ -86,12 +86,12 @@ body {
 #abot {
   @include pos(absolute, 61vh);
   cursor: pointer;
-  @include fontall(1.2vw, 500, ltr);
+  @include fontall(1.2vw, 650, ltr);
   color: black;
   left: 45%;
   background-color: white;
   border-radius: 22px;
-  @include sizeall(7.1vw, 3.5vh, 0, 0, 1.4vw, 2vh);
+  @include sizeall(7.4vw, 3.5vh, 0, 0, 1.4vw, 2vh);
 }
 
 #divnav {
@@ -117,6 +117,9 @@ body {
 
 .h2nav {
   color: white;
+  text-align: center;
+  @include fontall(1.5vw, 600, ltr);
+  letter-spacing: 5px;
 }
 
 .imgnav {
@@ -152,7 +155,7 @@ body {
 }
 
 .h3post {
-  @include fontall(1.5vw, 600, ltr)
+  @include fontall(1.4vw, 600, ltr)
 }
 
 .ppost {
@@ -208,23 +211,120 @@ body {
 }
 
 #ostaddiv {
-  @include sizeall(100%, 75vh, 0, 0, 0, 0);
+  @include sizeall(100%, 95vh, 0, 0, 0, 0);
   background-color: #e7e7e7;
   @include pos(absolute, 351vh);
   @include displayall(flex, space-evenly, row, wrap);
 }
 
+.articleostad:hover {
+  transform: scale(1.05, 1.05);
+}
+
+
 .articleostad {
-  @include sizeall(23vw, 60vh, 0, 0, 0, 0);
+  @include sizeall(23vw, 63vh, 0, 0, 0, 0);
   background-color: #ffffff;
   @include displayall(flex, start, column, wrap);
   align-items: center;
   border-radius: 16px;
-  margin-top: 4vh;
+  margin-top: 16vh;
   box-shadow: 0 2px 18px 5px #adacac;
 }
 
 .imgostad {
-  @include sizeall(100%, 45vh, 0, 0, 0, 0);
+  @include sizeall(100%, 43vh, 0, 0, 0, 0);
   border-radius: 16px;
+}
+
+.h3ostad {
+  @include fontall(1.4vw, 600, ltr);
+}
+
+.postad {
+  @include fontall(1.3vw, 400, ltr);
+}
+
+#exprdiv {
+  @include sizeall(100%, 99vh, 0, 0, 0, 0);
+  background-color: #f5f5f5;
+  @include pos(absolute, 446vh);
+  @include displayall(flex, space-evenly, row, wrap);
+}
+
+#exprleft {
+  @include sizeall(50%, 99vh, 0, 0, 0, 0);
+  text-align: center;
+}
+
+#exprimg {
+  @include sizeall(30vw, 100%, 0, 0, 0, 0);
+}
+
+#exprright {
+  box-sizing: border-box;
+  @include sizeall(50%, 99vh, 0, 0, 2.5vw, 1vh);
+  @include displayall(flex, start, column, wrap);
+}
+
+#exprh2 {
+  @include fontall(3.2vw, 700, ltr);
+  margin-top: 12vh;
+}
+
+#exprp {
+  text-align: justify;
+  text-justify: inter-word;
+  @include fontall(1.3vw, 500, ltr);
+}
+
+#exprbdiv {
+  @include sizeall(100%, 22vh, 0, 0, 0, 0);
+  margin-top: 15vh;
+  @include displayall(flex, space-evenly, row, wrap);
+}
+
+#exprbdiv1 {
+  @include displayall(flex, center, column, wrap);
+  @include sizeall(10vw, 100%, 0, 0, 0, 0);
+  align-items: center;
+}
+
+#exprbdiv2 {
+  @extend #exprbdiv1;
+}
+
+#exprbdiv3 {
+  @extend #exprbdiv1;
+}
+
+#exprspan1 {
+  @include fontall(3.5vw, 700, ltr);
+  color: $brownColor;
+}
+
+#exprspan2 {
+  @extend #exprspan1;
+}
+
+#exprspan3 {
+  @extend #exprspan1;
+}
+
+#exprp1 {
+  @include fontall(1.3vw, 700, ltr);
+}
+
+#exprp2 {
+  @extend #exprp1;
+}
+
+#exprp3 {
+  @extend #exprp1;
+}
+#ostadtitle{
+  @include pos(absolute, 350vh);
+  left: 34vw;
+  @include fontall(3vw, 600, ltr);
+  letter-spacing: 3px;
 }

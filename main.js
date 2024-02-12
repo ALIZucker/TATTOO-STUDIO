@@ -20,6 +20,23 @@ const abouth2 = document.createElement("h2");
 const aboutp = document.createElement("p");
 const aboutbot = document.createElement("a");
 const ostaddiv = document.createElement("div");
+const ostadtitle = document.createElement("h2");
+const exprdiv = document.createElement("div");
+const exprleft = document.createElement("section");
+const exprright = document.createElement("section");
+const exprimg = document.createElement("img");
+const exprh2 = document.createElement("h2");
+const exprp = document.createElement("p");
+const exprbdiv = document.createElement("div");
+const exprbdiv1 = document.createElement("div");
+const exprbdiv2 = document.createElement("div");
+const exprbdiv3 = document.createElement("div");
+const exprspan1 = document.createElement("span");
+const exprspan2 = document.createElement("span");
+const exprspan3 = document.createElement("span");
+const exprp1 = document.createElement("p");
+const exprp2 = document.createElement("p");
+const exprp3 = document.createElement("p");
 ///////////////////////////////////////////setAttribute
 
 divbanner.setAttribute("id", "divbanner");
@@ -41,9 +58,29 @@ aboutimg.setAttribute("id", "aboutimg");
 abouth2.setAttribute("id", "abouth2");
 aboutp.setAttribute("id", "aboutp");
 aboutbot.setAttribute("id", "aboutbot");
+
 ostaddiv.setAttribute("id", "ostaddiv");
+ostadtitle.setAttribute("id", "ostadtitle");
+
+exprdiv.setAttribute("id", "exprdiv");
+exprleft.setAttribute("id", "exprleft");
+exprimg.setAttribute("id", "exprimg");
+exprright.setAttribute("id", "exprright");
+exprh2.setAttribute("id", "exprh2");
+exprp.setAttribute("id", "exprp");
+exprbdiv.setAttribute("id", "exprbdiv");
+exprbdiv1.setAttribute("id", "exprbdiv1");
+exprspan1.setAttribute("id", "exprspan1");
+exprp1.setAttribute("id", "exprp1");
+exprbdiv2.setAttribute("id", "exprbdiv2");
+exprspan2.setAttribute("id", "exprspan2");
+exprp2.setAttribute("id", "exprp2");
+exprbdiv3.setAttribute("id", "exprbdiv3");
+exprspan3.setAttribute("id", "exprspan3");
+exprp3.setAttribute("id", "exprp3");
+
 ///////////////////////////////////////////start Code
-/* بنر سایت */
+/*-------------- --------------بنر سایت------------------------------------------------ */
 const img1 = createimg("assets/img/slider-default1.jpg")
 const img2 = createimg("assets/img/slider-default2.jpg")
 const img3 = createimg("assets/img/slider-default3.jpg")
@@ -63,7 +100,8 @@ sectionright.append(ullist)
 divbanner.append(sectionleft, sectionright)
 demo.append(divbanner)
 
-/*لیست منو ها خواهد بود */
+/*-----------------لیست منو ها خواهد بود------------------------------------------------------- */
+
 const navtitle = ["TATTOOS &  <br/> COVER-UPS", "PIERCING &  <br/> JEWELLERY", "CUSTOM TATTOO  <br/> DESIGNS", "PORTRAITS  <br/> PAINTINGS"];
 const navpic = ["assets/img/logo.webp", "assets/img/about_image2.png", "assets/img/about_image3.png", "assets/img/about_image4.png"];
 
@@ -71,10 +109,10 @@ for (let i = 0; i < 4; i++) {
 
     divnav.append(createnav(navpic[i], navtitle[i]))
 }
-
 demo.append(divnav);
 
-/*لیست پست هااا */
+/*---------------------------------لیست پست هااا-------------------------------------------- */
+
 const postimg = [
     {
         src: "assets/img/s1.jpg",
@@ -107,7 +145,7 @@ for (let x of postimg) {
 }
 demo.append(divpost);
 
-/*درباره سایت تتو*/
+/*---------------------درباره سایت تتو-----------------------------------------------------------*/
 
 aboutimg.src = "assets/img/fashion_image.jpg";
 abouth2.innerHTML = "WE ARE THE COOLEST <br/> TATTOO STUDIO"
@@ -121,7 +159,7 @@ abosectionright.append(abouth2, aboutp, aboutbot)
 abosectionleft.append(aboutimg)
 aboutdiv.append(abosectionleft, abosectionright)
 demo.append(aboutdiv)
-/*اسم تتو کار ها*/
+/*------------------------------------------اسم تتو کار ها-------------------------------------------------------------------------*/
 const ostad = [{
     src: "assets/img/team_member1.jpg",
     title: "NATHAN WALKER",
@@ -140,12 +178,53 @@ const ostad = [{
     desc: "Henna Designer"
 }
 ]
+ostadtitle.innerHTML = "MEET THE ARTISTS";
+
 for (let x of ostad) {
     ostaddiv.append(createostad(x.src, x.title, x.desc))
 }
-demo.append(ostaddiv)
+demo.append(ostaddiv, ostadtitle)
 
-///////////////////////////////////////////////function
+/* ----------------------------------------شمارش سایت------------------------------------------------------------------------- */
+
+exprimg.src = "assets/img/choose_us_image.png";
+exprh2.innerHTML = "WE HAVE 25 YEARS <br/>OF EXPERIENCE";
+exprp.innerHTML = "Sed eu justo sit amet metustin laoreet accum sanis asceyian ayli quam, umsausce ayliqad uam, tellus id inumsau amet metustin laoreet accum sanis asceyian ayli quam, umsausce ayliqad uam, tellus id inumsau amet metustin laoreet accum sanis asceyian ayli quam, umsausce.";
+exprspan1.innerHTML = "0";
+exprp1.innerHTML = "Happy <br/> Clients";
+exprspan2.innerHTML = "0";
+exprp2.innerHTML = "Tattoo <br/>  Styles";
+exprspan3.innerHTML = "0";
+exprp3.innerHTML = "Tattoo <br/> Artists";
+
+exprbdiv3.append(exprspan3, exprp3)
+exprbdiv2.append(exprspan2, exprp2)
+exprbdiv1.append(exprspan1, exprp1)
+exprbdiv.append(exprbdiv1, exprbdiv2, exprbdiv3)
+exprleft.append(exprimg)
+exprright.append(exprh2, exprp, exprbdiv)
+exprdiv.append(exprleft, exprright)
+demo.append(exprdiv)
+let con = 0;
+
+setInterval(() => count(), 1)
+/*------------------------------------------------------footer------------------------------------------------*/
+
+///////////////////////////////////////////////////////////function
+
+function count() {
+    con += 1;
+    if (con < 1598) {
+        exprspan1.innerHTML = con;
+    }
+    if (con < 1201) {
+        exprspan2.innerHTML = con;
+    }
+    if (con < 26) {
+        exprspan3.innerHTML = con;
+    }
+
+}
 
 function createimg(str) {
     const img = document.createElement("img");
@@ -216,3 +295,6 @@ function createostad(strimg, strtitle, strp) {
     articleostad.append(imgostad, h3ostad, postad);
     return articleostad;
 }
+
+/////////////////////////////jquery
+

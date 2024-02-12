@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Caprasimo';
+    src: url('Caprasimo-Regular.eot');
+    src: url('Caprasimo-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Caprasimo-Regular.woff2') format('woff2'),
+        url('Caprasimo-Regular.woff') format('woff'),
+        url('Caprasimo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gloock';
+    src: url('Gloock-Regular.eot');
+    src: url('Gloock-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Gloock-Regular.woff2') format('woff2'),
+        url('Gloock-Regular.woff') format('woff'),
+        url('Gloock-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alkatra';
+    src: url('Alkatra-Regular.eot');
+    src: url('Alkatra-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Alkatra-Regular.woff2') format('woff2'),
+        url('Alkatra-Regular.woff') format('woff'),
+        url('Alkatra-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+.lilist{
+    font-family: Gloock;
+}
+#H1title{
+    font-family: Caprasimo;
+}
+#abot{
+    font-family: Gloock;
+}
+.h2nav{
+    font-family: Gloock;
+}
+.h3post{ font-family: Caprasimo;}
+.ppost{font-family: Alkatra;}
+#abouth2{ font-family: Caprasimo;}
+#aboutp{font-family: Alkatra;}
+#aboutbot{font-family: Gloock;}
+#ostadtitle{font-family: Gloock;}
+.h3ostad{font-family: Caprasimo;}
+.postad{font-family: Alkatra;}
+#exprh2{font-family: Gloock;}
+#exprp{font-family: Alkatra;
+}
+#exprspan1,#exprspan2,#exprspan3{
+    font-family: Gloock;
+}
+#exprp1,#exprp2,#exprp3{
+    font-family: Caprasimo;
+}
