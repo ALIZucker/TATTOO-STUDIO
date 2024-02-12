@@ -12,6 +12,13 @@ const lilist2 = document.createElement("li");
 const lilist3 = document.createElement("li");
 const divnav = document.createElement("div");
 const divpost = document.createElement("div");
+const aboutdiv = document.createElement("div");
+const abosectionleft = document.createElement("section");
+const abosectionright = document.createElement("section");
+const aboutimg = document.createElement("img");
+const abouth2 = document.createElement("h2");
+const aboutp = document.createElement("p");
+const aboutbot = document.createElement("a");
 ///////////////////////////////////////////setAttribute
 
 divbanner.setAttribute("id", "divbanner");
@@ -26,6 +33,13 @@ H1.setAttribute("id", "H1title");
 abot.setAttribute("id", "abot");
 divnav.setAttribute("id", "divnav");
 divpost.setAttribute("id", "divpost");
+aboutdiv.setAttribute("id", "aboutdiv");
+abosectionleft.setAttribute("id", "abosectionleft");
+abosectionright.setAttribute("id", "abosectionright");
+aboutimg.setAttribute("id", "aboutimg");
+abouth2.setAttribute("id", "abouth2");
+aboutp.setAttribute("id", "aboutp");
+aboutbot.setAttribute("id", "aboutbot");
 ///////////////////////////////////////////start Code
 /* بنر سایت */
 const img1 = createimg("assets/img/slider-default1.jpg")
@@ -87,10 +101,18 @@ const postimg = [
     }
 ]
 for (let x of postimg) {
-    divpost.append(createpost(x.src,x.title,x.desc))
+    divpost.append(createpost(x.src, x.title, x.desc))
 }
 demo.append(divpost);
 
+/*درباره سایت تتو*/
+
+aboutimg.src="assets/img/fashion_image.jpg";
+
+abosectionright.append()
+abosectionleft.append(aboutimg)
+aboutdiv.append(abosectionleft,abosectionright)
+demo.append(aboutdiv)
 ///////////////////////////////////////////////function
 
 function createimg(str) {
@@ -142,6 +164,6 @@ function createpost(strimg, strtitle, strp) {
     imgpost.src = strimg;
     h3post.innerHTML = strtitle;
     ppost.innerHTML = strp;
-    articlepost.append(imgpost, h3post,ppost);
+    articlepost.append(imgpost, h3post, ppost);
     return articlepost;
 }

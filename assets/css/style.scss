@@ -27,6 +27,11 @@ body {
   direction: $directtext;
 }
 
+@mixin pos($pos,$top) {
+  position: $pos;
+  top: $top;
+}
+
 // بدنه سی اس اس
 
 .mySlides {
@@ -35,8 +40,7 @@ body {
 }
 
 #divbanner {
-  position: absolute;
-  top: 0;
+  @include pos(absolute, 0);
   right: 0;
   z-index: 2;
   box-sizing: border-box;
@@ -67,12 +71,10 @@ body {
 }
 
 #H1title {
-  position: absolute;
-  z-index: 3;
+  @include pos(absolute, 25%);
   @include fontall(4.3vw, 700, ltr);
   text-align: center;
   left: 27vw;
-  top: 25%;
   color: white;
 }
 
@@ -82,11 +84,9 @@ body {
 }
 
 #abot {
+  @include pos(absolute, 61vh);
   cursor: pointer;
-  position: absolute;
-  z-index: 3;
   @include fontall(1.2vw, 500, ltr);
-  top: 61vh;
   color: black;
   left: 45%;
   background-color: white;
@@ -97,8 +97,7 @@ body {
 #divnav {
   @include sizeall(100%, 35vh, 0, 0, 0, 0);
   background-color: #b0743f;
-  position: absolute;
-  top: 90vh;
+  @include pos(absolute, 90vh);
   @include displayall(flex, space-evenly, row, wrap);
 
 }
@@ -127,7 +126,7 @@ body {
 }
 
 .articlepost:hover {
-  background-color:#b0743f ;
+  background-color: #b0743f;
   color: #efeded;
 }
 
@@ -141,8 +140,7 @@ body {
 
 #divpost {
   @include sizeall(100%, 130vh, 0, 0, 0, 0);
-  position: absolute;
-  top: 125vh;
+  @include pos(absolute, 125vh);
   @include displayall(flex, space-evenly, row, wrap);
   align-items: center;
 
@@ -160,3 +158,24 @@ body {
 .ppost {
   @include fontall(1.2vw, 400, ltr)
 }
+
+#aboutdiv {
+  background-color: darkcyan;
+  @include sizeall(100%, 93vh, 0, 0, 0, 0);
+  @include pos(absolute, 260vh);
+}
+#aboutimg{
+  @include sizeall(50%, 93vh, 0, 0, 0, 0);
+}
+#abosectionleft{
+  @include sizeall(100%, 93vh, 0, 0, 0, 0);
+  background-color: #efeded;
+}
+#abosectionright{
+  @include sizeall(45vw, 67vh, 0, 0, 0, 0);
+  background-color: #fff;
+  @include pos(absolute, 12vh);
+  left: 44%;
+  border-radius: 24px;
+}
+

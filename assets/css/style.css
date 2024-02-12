@@ -52,13 +52,12 @@ body {
 
 #H1title {
   position: absolute;
-  z-index: 3;
+  top: 25%;
   font-size: 4.3vw;
   font-weight: 700;
   direction: ltr;
   text-align: center;
   left: 27vw;
-  top: 25%;
   color: white; }
 
 #abot:hover {
@@ -66,13 +65,12 @@ body {
   color: white; }
 
 #abot {
-  cursor: pointer;
   position: absolute;
-  z-index: 3;
+  top: 61vh;
+  cursor: pointer;
   font-size: 1.2vw;
   font-weight: 500;
   direction: ltr;
-  top: 61vh;
   color: black;
   left: 45%;
   background-color: white;
@@ -166,5 +164,38 @@ body {
   font-size: 1.2vw;
   font-weight: 400;
   direction: ltr; }
+
+#aboutdiv {
+  background-color: darkcyan;
+  width: 100%;
+  height: 93vh;
+  margin: 0 0;
+  padding: 0 0;
+  position: absolute;
+  top: 260vh; }
+
+#aboutimg {
+  width: 50%;
+  height: 93vh;
+  margin: 0 0;
+  padding: 0 0; }
+
+#abosectionleft {
+  width: 100%;
+  height: 93vh;
+  margin: 0 0;
+  padding: 0 0;
+  background-color: #efeded; }
+
+#abosectionright {
+  width: 45vw;
+  height: 67vh;
+  margin: 0 0;
+  padding: 0 0;
+  background-color: #fff;
+  position: absolute;
+  top: 12vh;
+  left: 44%;
+  border-radius: 24px; }
 
 /*# sourceMappingURL=style.css.map */
