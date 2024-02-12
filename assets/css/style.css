@@ -383,7 +383,7 @@ body {
   height: 50vh;
   margin: 0 0;
   padding: 0 0;
-  background-color: #313030;
+  background-color: #444444;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -391,10 +391,10 @@ body {
   align-items: center; }
 
 #pfooter {
-  margin-top: 7vh;
   font-size: 1.3vw;
   font-weight: 500;
   direction: ltr;
-  color: #efeded; }
+  color: #efeded;
+  margin-top: 10vh; }
 
 /*# sourceMappingURL=style.css.map */

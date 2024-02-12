@@ -322,21 +322,23 @@ body {
 #exprp3 {
   @extend #exprp1;
 }
-#ostadtitle{
+
+#ostadtitle {
   @include pos(absolute, 350vh);
   left: 34vw;
   @include fontall(3vw, 600, ltr);
   letter-spacing: 3px;
 }
-#footerdiv{
+
+#footerdiv {
   @include pos(absolute, 545vh);
   @include sizeall(100%, 50vh, 0, 0, 0, 0);
-  background-color: #313030;
+  background-color: #444444;
   @include displayall(flex, center, column, wrap);
   align-items: center;
 }
 #pfooter{
-  margin-top: 7vh;
   @include fontall(1.3vw, 500, ltr);
   color: #efeded;
+  margin-top: 10vh;
 }
