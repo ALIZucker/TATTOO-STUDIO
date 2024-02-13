@@ -131,18 +131,19 @@ body {
 .articlepost:hover {
   background-color: $brownColor;
   color: #efeded;
+
 }
 
 .articlepost {
   background-color: #efeded;
-  @include sizeall(30vw, 63vh, 0, 0, 0, 0);
-  @include displayall(flex, center, column, wrap);
+  @include sizeall(30vw, 87vh, 0, 0, 0, 0);
+  @include displayall(flex, start, column, wrap);
   align-items: center;
   border-radius: 8px;
 }
 
 #divpost {
-  @include sizeall(100%, 130vh, 0, 0, 0, 0);
+  @include sizeall(100%, 180vh, 0, 0, 0, 0);
   @include pos(absolute, 125vh);
   @include displayall(flex, space-evenly, row, wrap);
   align-items: center;
@@ -150,22 +151,30 @@ body {
 }
 
 .imgpost {
-  @include sizeall(25vw, 40vh, 0, 0, 0, 0);
+  @include sizeall(22vw, 50vh, 0, 0, 0, 0);
+  margin-top: 1vh;
 
 }
 
 .h3post {
-  @include fontall(1.4vw, 600, ltr)
+  @include fontall(1.2vw, 600, ltr)
 }
 
 .ppost {
-  @include fontall(1.2vw, 400, ltr)
+  @include fontall(1vw, 400, ltr);
+  text-align: justify;
+  @include sizeall(20vw, 8vh, 0, 0, 0, 0);
+  word-break: inherit;
 }
-
+.p2post{
+  @extend .ppost;
+  margin: 0 5.5vw;
+  display: none;
+}
 #aboutdiv {
   background-color: darkcyan;
   @include sizeall(100%, 93vh, 0, 0, 0, 0);
-  @include pos(absolute, 260vh);
+  @include pos(absolute, 310vh);
 }
 
 #aboutimg {
@@ -213,7 +222,7 @@ body {
 #ostaddiv {
   @include sizeall(100%, 95vh, 0, 0, 0, 0);
   background-color: #e7e7e7;
-  @include pos(absolute, 351vh);
+  @include pos(absolute, 401vh);
   @include displayall(flex, space-evenly, row, wrap);
 }
 
@@ -223,17 +232,17 @@ body {
 
 
 .articleostad {
-  @include sizeall(23vw, 63vh, 0, 0, 0, 0);
+  @include sizeall(23vw,70vh, 0, 0, 0, 0);
   background-color: #ffffff;
   @include displayall(flex, start, column, wrap);
   align-items: center;
   border-radius: 16px;
-  margin-top: 16vh;
+  margin-top: 18vh;
   box-shadow: 0 2px 18px 5px #adacac;
 }
 
 .imgostad {
-  @include sizeall(100%, 43vh, 0, 0, 0, 0);
+  @include sizeall(100%,46vh, 0, 0, 0, 0);
   border-radius: 16px;
 }
 
@@ -248,7 +257,7 @@ body {
 #exprdiv {
   @include sizeall(100%, 99vh, 0, 0, 0, 0);
   background-color: #f5f5f5;
-  @include pos(absolute, 446vh);
+  @include pos(absolute, 496vh);
   @include displayall(flex, space-evenly, row, wrap);
 }
 
@@ -324,14 +333,14 @@ body {
 }
 
 #ostadtitle {
-  @include pos(absolute, 350vh);
+  @include pos(absolute, 400vh);
   left: 34vw;
   @include fontall(3vw, 600, ltr);
   letter-spacing: 3px;
 }
 
 #footerdiv {
-  @include pos(absolute, 545vh);
+  @include pos(absolute, 595vh);
   @include sizeall(100%, 50vh, 0, 0, 0, 0);
   background-color: #444444;
   @include displayall(flex, center, column, wrap);

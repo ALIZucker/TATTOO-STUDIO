@@ -131,11 +131,11 @@ body {
 .articlepost {
   background-color: #efeded;
   width: 30vw;
-  height: 63vh;
+  height: 87vh;
   margin: 0 0;
   padding: 0 0;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
@@ -143,7 +143,7 @@ body {
 
 #divpost {
   width: 100%;
-  height: 130vh;
+  height: 180vh;
   margin: 0 0;
   padding: 0 0;
   position: absolute;
@@ -155,20 +155,31 @@ body {
   align-items: center; }
 
 .imgpost {
-  width: 25vw;
-  height: 40vh;
+  width: 22vw;
+  height: 50vh;
   margin: 0 0;
-  padding: 0 0; }
+  padding: 0 0;
+  margin-top: 1vh; }
 
 .h3post {
-  font-size: 1.4vw;
+  font-size: 1.2vw;
   font-weight: 600;
   direction: ltr; }
 
-.ppost {
-  font-size: 1.2vw;
+.ppost, .p2post {
+  font-size: 1vw;
   font-weight: 400;
-  direction: ltr; }
+  direction: ltr;
+  text-align: justify;
+  width: 20vw;
+  height: 8vh;
+  margin: 0 0;
+  padding: 0 0;
+  word-break: inherit; }
+
+.p2post {
+  margin: 0 5.5vw;
+  display: none; }
 
 #aboutdiv {
   background-color: darkcyan;
@@ -177,7 +188,7 @@ body {
   margin: 0 0;
   padding: 0 0;
   position: absolute;
-  top: 260vh; }
+  top: 310vh; }
 
 #aboutimg {
   width: 50%;
@@ -243,7 +254,7 @@ body {
   padding: 0 0;
   background-color: #e7e7e7;
   position: absolute;
-  top: 351vh;
+  top: 401vh;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
@@ -254,7 +265,7 @@ body {
 
 .articleostad {
   width: 23vw;
-  height: 63vh;
+  height: 70vh;
   margin: 0 0;
   padding: 0 0;
   background-color: #ffffff;
@@ -264,12 +275,12 @@ body {
   flex-wrap: wrap;
   align-items: center;
   border-radius: 16px;
-  margin-top: 16vh;
+  margin-top: 18vh;
   box-shadow: 0 2px 18px 5px #adacac; }
 
 .imgostad {
   width: 100%;
-  height: 43vh;
+  height: 46vh;
   margin: 0 0;
   padding: 0 0;
   border-radius: 16px; }
@@ -291,7 +302,7 @@ body {
   padding: 0 0;
   background-color: #f5f5f5;
   position: absolute;
-  top: 446vh;
+  top: 496vh;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
@@ -369,7 +380,7 @@ body {
 
 #ostadtitle {
   position: absolute;
-  top: 350vh;
+  top: 400vh;
   left: 34vw;
   font-size: 3vw;
   font-weight: 600;
@@ -378,7 +389,7 @@ body {
 
 #footerdiv {
   position: absolute;
-  top: 545vh;
+  top: 595vh;
   width: 100%;
   height: 50vh;
   margin: 0 0;

@@ -40,6 +40,9 @@ const exprp3 = document.createElement("p");
 const footerdiv = document.createElement("div");
 const legofooter = document.createElement("img");
 const pfooter = document.createElement("p");
+
+
+
 ///////////////////////////////////////////setAttribute
 
 divbanner.setAttribute("id", "divbanner");
@@ -122,31 +125,45 @@ const postimg = [
         src: "assets/img/s1.jpg",
         title: "GOTHIC TATTOO",
         desc: "Sed eu justo sit amet metustin laoreet accum<br/> sanis asceyian ayli quam, umsausce"
+        ,
+        desc2: "Quite evidently, a Virtual Private Network or shortly a VPN like Paladin is supposed to armor your online presence against vicious hackers and snoops on a public network"
     }, {
         src: "assets/img/s2.jpg",
         title: "SIMPLE SHAPES",
-        desc: "Sed eu justo sit amet metustin laoreet accum <br/>sanis asceyian ayli quam, umsausce"
+        desc: "Sed eu justo sit amet metustin laoreet accum <br/>sanis asceyian ayli quam, umsausce"       ,
+        desc2: "Quite evidently, a Virtual Private Network or shortly a VPN like Paladin is supposed to armor your online presence against vicious hackers and snoops on a public network"
     }, {
         src: "assets/img/s3.jpg",
         title: "FANTASY TATTOO",
-        desc: "Sed eu justo sit amet metustin laoreet accum<br/> sanis asceyian ayli quam, umsausce"
+        desc: "Sed eu justo sit amet metustin laoreet accum<br/> sanis asceyian ayli quam, umsausce"       ,
+        desc2: "Quite evidently, a Virtual Private Network or shortly a VPN like Paladin is supposed to armor your online presence against vicious hackers and snoops on a public network"
     }, {
         src: "assets/img/s4.jpg",
         title: "JAPANESE TATTOO",
-        desc: "Sed eu justo sit amet metustin laoreet accum<br/> sanis asceyian ayli quam, umsausce"
+        desc: "Sed eu justo sit amet metustin laoreet accum<br/> sanis asceyian ayli quam, umsausce"       ,
+        desc2: "Quite evidently, a Virtual Private Network or shortly a VPN like Paladin is supposed to armor your online presence against vicious hackers and snoops on a public network"
     }, {
         src: "assets/img/s5.jpg",
         title: "FULL SLEEVE TATTOO",
-        desc: "Sed eu justo sit amet metustin laoreet accum <br/>sanis asceyian ayli quam, umsausce"
+        desc: "Sed eu justo sit amet metustin laoreet accum <br/>sanis asceyian ayli quam, umsausce"       ,
+        desc2: "Quite evidently, a Virtual Private Network or shortly a VPN like Paladin is supposed to armor your online presence against vicious hackers and snoops on a public network"
     }, {
         src: "assets/img/s6.jpg",
         title: "SKIN DEEP",
-        desc: "Sed eu justo sit amet metustin laoreet accum<br/> sanis asceyian ayli quam, umsausce"
+        desc: "Sed eu justo sit amet metustin laoreet accum<br/> sanis asceyian ayli quam, umsausce"       ,
+        desc2: "Quite evidently, a Virtual Private Network or shortly a VPN like Paladin is supposed to armor your online presence against vicious hackers and snoops on a public network"
     }
 ]
 for (let x of postimg) {
-    divpost.append(createpost(x.src, x.title, x.desc))
+    divpost.append(createpost(x.src, x.title, x.desc,x.desc2))
 }
+$(document).ready(function () {
+    $(".articlepost").click(function () {
+       $("p[class='p2post']").show(1500)
+    })
+})
+
+
 demo.append(divpost);
 
 /*---------------------درباره سایت تتو-----------------------------------------------------------*/
@@ -231,7 +248,6 @@ function count() {
         exprspan3.innerHTML = con;
     }
     if(con === 1598){
-
         clearInterval(setinter)
     }
 
@@ -273,20 +289,24 @@ function createnav(strimg, strtitle) {
     return articlenav;
 }
 
-function createpost(strimg, strtitle, strp) {
+function createpost(strimg, strtitle, strp,strp2) {
     const articlepost = document.createElement("article");
     const imgpost = document.createElement("img");
     const h3post = document.createElement("h3");
     const ppost = document.createElement("p");
+    const p2post = document.createElement("p");
 
     articlepost.setAttribute("class", "articlepost")
     imgpost.setAttribute("class", "imgpost")
     h3post.setAttribute("class", "h3post")
     ppost.setAttribute("class", "ppost")
+    p2post.setAttribute("class", "p2post")
+
     imgpost.src = strimg;
     h3post.innerHTML = strtitle;
     ppost.innerHTML = strp;
-    articlepost.append(imgpost, h3post, ppost);
+    p2post.innerHTML=strp2;
+    articlepost.append(imgpost, h3post, ppost,p2post);
     return articlepost;
 }
 
